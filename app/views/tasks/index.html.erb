@@ -1,9 +1,9 @@
 <h1>Tasks#index</h1>
 <% Task.all.each do |task| %>
   <% if task.completed %>
-    [X] <%= task.title %>
+    [X] <%= link_to task.title, task_path(task) %>
   <% else %>
-    [ ] <%= task.title %>
+    [ ] <%= link_to task.title, task_path(task) %>
   <% end %>
   <br><br>
 <% end %>
