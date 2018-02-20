@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class TasksControllerTest < ActionDispatch::IntegrationTest
-  test "should get show" do
-    get tasks_show_url
+  test "should get create" do
+    get tasks_create_url
     assert_response :success
   end
 
