@@ -1,0 +1,9 @@
+<h1>Tasks#index</h1>
+<% Task.all.each do |task| %>
+  <% if task.completed %>
+    [X] <%= task.title %>
+  <% else %>
+    [ ] <%= task.title %>
+  <% end %>
+  <br><br>
+<% end %>
